@@ -68,8 +68,8 @@ suite('Functional Tests', function() {
           })
           .end(function(err, res) {
             // TODO: check for redirect
-            console.log(res.headers)
             assert.equal(res.status, 200)
+          
             done()
           })
       })
@@ -84,6 +84,7 @@ suite('Functional Tests', function() {
           .end(function(err, res) {
             // TODO: check for redirect
             assert.equal(res.status, 200)
+          
             done()
           })
       })
